@@ -14,7 +14,9 @@ namespace HashTableDemo
             hash.Add("3", "not");
             hash.Add("4", "to");
             hash.Add("5", "be");
-            hash.GetFrequency("be");
+            string checkFreq = "be";
+            int freq= hash.GetFrequency(checkFreq);
+            Console.WriteLine("Frequency of {0} is {1}", checkFreq, freq);
             Console.ReadKey();
         }
 
