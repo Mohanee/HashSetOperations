@@ -4,10 +4,11 @@ using System.Text;
 
 namespace HashTableDemo
 {
-    public struct KeyValue<K, V>
+    public class KeyValue<K, V>
     {
         public K Key { get; set; }
         public V Value { get; set; }
+        public int Frequency { get; set; }
     }
 
     class MyMapNode<K, V>
@@ -114,8 +115,10 @@ namespace HashTableDemo
                     }
                 }
             }
+            Console.WriteLine("Word '{0}' appears {1} times", value, frequency);
            return frequency;
         }
+
     }
 
 }
